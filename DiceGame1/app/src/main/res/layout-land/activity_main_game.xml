@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="uk.ac.ljmu.dicegame1.MainGame">
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/resetscore"
+        tools:text="@string/resetscore"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/button2"
+        android:layout_marginBottom="40dp" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="1dp"
+        android:contentDescription="@string/image1"
+        app:srcCompat="@drawable/dice1"
+        android:layout_below="@+id/editText3"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp"
+        android:alpha="0"
+        android:scaleX="0"
+        android:scaleY="0" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="1dp"
+        android:contentDescription="@string/image2"
+        app:srcCompat="@drawable/dice2"
+        android:layout_marginStart="24dp"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_toEndOf="@+id/imageView1"
+        android:alpha="0"
+        android:scaleX="0"
+        android:scaleY="0" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="button1Click"
+        android:text="@string/roll"
+        tools:text="@string/roll"
+        android:layout_alignTop="@+id/editText3"
+        android:layout_alignEnd="@+id/button2" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="button2Click"
+        android:text="@string/leaderboard"
+        tools:text="@string/leaderboard"
+        android:layout_marginEnd="12dp"
+        android:layout_above="@+id/button3"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="27dp" />
+
+    <TextView
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:freezesText="true"
+        android:text="@string/player"
+        android:textColor="@android:color/black"
+        tools:text="@string/player" />
+
+    <TextView
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editText1"
+        android:layout_marginTop="19dp"
+        android:freezesText="true"
+        android:text="@string/score1"
+        android:textColor="@android:color/black"
+        tools:text="@string/score1" />
+
+    <TextView
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editText2"
+        android:layout_marginTop="13dp"
+        android:freezesText="true"
+        android:text="@string/score2"
+        android:textColor="@android:color/black"
+        tools:text="@string/score2" />
+
+</android.widget.RelativeLayout>
